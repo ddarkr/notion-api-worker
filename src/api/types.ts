@@ -92,6 +92,8 @@ export interface RowType {
     id: string;
     parent_id: string;
     properties: { [key: string]: DecorationType[] };
+    created_time: number;
+    last_edited_time: number;
   };
 }
 

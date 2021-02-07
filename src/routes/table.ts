@@ -50,6 +50,8 @@ export const getTableData = async (
         }
       }
     }
+    row["createdAt"] = new Date(td.value.created_time).toISOString();
+    row["updatedAt"] = new Date(td.value.last_edited_time).toISOString();
     rows.push(row);
   }
 
